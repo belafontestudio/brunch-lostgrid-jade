@@ -1,0 +1,36 @@
+doctype html
+// if lt IE 7html.no-js.lt-ie9.lt-ie8.lt-ie7(lang="en")
+// if IE 7html.no-js.lt-ie9.lt-ie8(lang="en")
+// if IE 8html.no-js.lt-ie9(lang="en")
+//if gt IE 8
+	| [if gt IE 8]
+html.no-js(lang="en")
+	// <![endif]
+	head
+		block head
+			meta(charset="utf-8")
+			meta(content="IE=edge,chrome=1", http-equiv="X-UA-Compatible")
+			meta(content="", name="description")
+			meta(content="width=device-width, initial-scale=1, maximum-scale=1", name="viewport")
+			meta(name="apple-mobile-web-app-capable", content = "yes")
+			meta(name="apple-mobile-web-app-status-bar-style", content ="black")
+			meta(name="format-detection", content="telephone=no")
+			title= 'Experientia'
+			script
+				<window class="brunch">= window.brunch || {};<\\/window>
+			link(href="../css/font-awesome.css", rel="stylesheet")
+			block vendor_css
+				link(href="../css/vendor.css", rel="stylesheet")
+			link(href="../css/app.css", rel="stylesheet")
+			block external-scripts
+
+
+	body
+
+		block menu
+			h1 Menu
+
+		block main
+			h1 General Layout
+		block scripts
+			script(src="../js/app.js") 

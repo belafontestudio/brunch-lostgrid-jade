@@ -1,0 +1,17 @@
+@import 'type-utils'
+
+scale = 0 450px 600px 768px 1080px 1300px
+
+placeholder-color(color)
+    &::-webkit-input-placeholder
+       color color !important
+    &:-moz-placeholder  /* Firefox 18- */
+       color color !important
+    &::-moz-placeholder  /* Firefox 19+ */
+       color color !important
+    &:-ms-input-placeholder
+       color color !important
+
+
+// http://paulirish.com/2012/box-sizing-border-box-ftw/
+* { box-sizing: border-box; }
